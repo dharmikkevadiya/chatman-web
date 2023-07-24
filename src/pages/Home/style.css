@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  background-color: #ddddf7;
+}
+
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: 1;
+    width: 100%;
+  }
+
+  .chat_section .top .icon_back {
+    display: block;
+  }
+}

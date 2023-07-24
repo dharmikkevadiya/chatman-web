@@ -1,0 +1,123 @@
+.sidebar {
+  width: 390px;
+  height: 100vh;
+  background-color: #3e3c61;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: white;
+}
+
+/* top section */
+.sidebar .top_section {
+  display: flex;
+  align-items: center;
+  padding: 8px 6px;
+  background-color: #2f2d52;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.sidebar .top_section .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+}
+
+.sidebar .top_section .avatar {
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar .total_user {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* serach */
+.search input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-bottom: 1px solid gray;
+  height: 40px;
+  width: 100%;
+  padding-left: 12px;
+}
+
+/* users list */
+.chat_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat_list .item {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.chat_list .item:hover {
+  background-color: #2f2d52;
+  cursor: pointer;
+}
+.chat_list .item .avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 5px;
+}
+
+.chat_list .item .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 84%;
+  padding: 5px;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.chat_list .item .info .name {
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+}
+
+.chat_list .item .info p:first-child {
+  font-weight: 900;
+}
+
+.chat_list .item .info span {
+  color: #1a9cff;
+  position: relative;
+  left: 5px;
+  top: 3px;
+}
+
+.chat_list .item .info .name,
+.message {
+  width: 70%;
+}
+.chat_list .item .info p:not(:first-child) {
+  font-size: 12px;
+  color: #707991;
+}
+
+.chat_list .item .info .count {
+  font-size: 9.5px !important;
+  width: 16px;
+  height: 16px;
+  background: #78e378;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 2.5px;
+  color: black !important;
+}

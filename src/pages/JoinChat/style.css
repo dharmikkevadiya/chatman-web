@@ -1,0 +1,150 @@
+.join_container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.join_container .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+}
+
+.join_box {
+  max-width: 384px;
+  width: 100%;
+  height: 384px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.join_box .heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+.join_box .heading span {
+  color: #3e3c61;
+}
+
+.join_box form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.join_box form .avatar_list {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.join_box form .error {
+  font-size: 12px;
+  color: red;
+}
+
+.join_box form .avatar_list img {
+  width: 50px;
+}
+.join_box form .avatar_list .selected {
+  border: 2px solid #3e3c61;
+}
+.join_box input[type="text"] {
+  background: #dcdcdc;
+  border-radius: 12px;
+  height: 45px;
+  border: none !important;
+  padding: 10px;
+}
+
+.join_box input[type="text"]:focus {
+  outline: none !important;
+}
+
+.join_box .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.join_box .form-group label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.join_box form .join-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.join_box form button {
+  background: #3e3c61;
+  border-radius: 8px;
+  width: 300px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.join_box form button:hover {
+  background: #2f2d52;
+}
+
+.join_container .right {
+  width: 50%;
+  position: relative;
+  text-align: center;
+  background: url("../../assets/bg2.jpg");
+}
+
+.join_container .right .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  line-height: 28px;
+  width: 90%;
+  color: #3e3c61;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.join_container .right .content h1 {
+  font-size: 50px;
+  color: #2f2d52;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .join_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .join_container .left {
+    width: 100%;
+  }
+
+  .join_container .right {
+    display: none;
+  }
+}
