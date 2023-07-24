@@ -1,3 +1,3 @@
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = "https://chatman-server.vercel.app";
 
 export { BASE_URL };
